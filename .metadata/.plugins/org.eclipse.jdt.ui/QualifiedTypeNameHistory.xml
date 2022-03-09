@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="edu.kh.oarr.ex.model.vo.Book"/>
-    <fullyQualifiedTypeName name="edu.kh.inheritance.ex.model.vo.Person"/>
     <fullyQualifiedTypeName name="edu.kh.inheritance.ex.model.vo.Student"/>
     <fullyQualifiedTypeName name="edu.kh.inheritance.ex.model.service.InheritanceServcie"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
@@ -59,5 +57,7 @@
     <fullyQualifiedTypeName name="jdk.jfr.events.FileWriteEvent"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="codingTest.model.service.AtCoder"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

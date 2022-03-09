@@ -9,7 +9,7 @@ public class CodingTest_01 {
 		AtCoder atCorder = new AtCoder();
 		
 		//atCorder.placingMarbles();
-		atCorder.shiftOnly();
+		atCorder.coin();
 	
 	}
 
