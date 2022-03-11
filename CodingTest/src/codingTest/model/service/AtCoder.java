@@ -123,5 +123,46 @@ public class AtCoder {
 			}
 		}
 	}
+	
+	public void someSum() {
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		
+		int sum = 0;
+		int num =0;
+		int result = 0;
+		
+		if(n>=1 && n <= Math.pow(10, 4)) {
+			if((a>=1 && a<= 36)&&(b>=1 && b<= 36)){
+				for(int i =0; i <= n; i++) {
+					num = i;
+					sum = 0;
+					
+					while(num != 0) {
+						sum += num%10;
+						num /= 10;
+						System.out.println("i : "+i);
+						System.out.println("sum : "+sum);
+						
+					}
+					if(sum >=a && sum <= b) {
+						result += i;
+						System.out.println("result : " +result);
+					}
+				}
+			}
+		}
+	}
+	
+//	import java.util.Scanner;
+//	public class Main {
+//	 
+//	    public static void main(String[] args) {
+//	    	
+//	    }
+//	}
 }
 		
