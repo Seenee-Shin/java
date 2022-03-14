@@ -2,9 +2,7 @@ package codingTest.model.service;
 
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.Scanner;
-import java.util.Set;
 
 
 public class AtCoder {
@@ -188,19 +186,6 @@ public class AtCoder {
 			}
 		}
 		System.out.println(alice-bob);
-	}
-	
-	public void kagamiMochi(){
-		
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-	
-		Set<Integer> resultSet = new HashSet<Integer>();
-		
-		for(int i =0; i <n; i++) {
-			resultSet.add(sc.nextInt());
-		}
-		System.out.println(resultSet.size());
 	}
 	
 //	import java.util.Scanner;
