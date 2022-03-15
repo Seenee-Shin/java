@@ -203,6 +203,36 @@ public class AtCoder {
 		System.out.println(resultSet.size());
 	}
 	
+	public void otoshidama() {
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		int y = sc.nextInt();
+		int num1=0;
+		int num2 = 0;
+		int num3 =0;
+		
+		for(int i =0; i <= n; i++) {
+			for(int j=0; j <= n-i; j++) {
+				
+				for(int k=0; k <= n-i-j; k++) {
+					if(i+j+k == n) {
+						if((i*10000)+(j*5000)+(k*1000)==y) {
+							num1=i;
+							num2=j;
+							num3=k;
+						}
+					}
+				}
+			}
+		}
+		if(num1==0 && num2==0 && num3==0) {
+			System.out.println("-1 -1 -1");
+		}else{
+			System.out.println(num1+" "+num2+" "+num3);
+		}
+	}
+	
 //	import java.util.Scanner;
 //	public class Main {
 //	 
