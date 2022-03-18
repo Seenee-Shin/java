@@ -1,8 +1,10 @@
 package codingTest.model.service;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -232,6 +234,11 @@ public class AtCoder {
 			System.out.println(num1+" "+num2+" "+num3);
 		}
 	}
+	
+	public void ABC049C() {
+		
+	}
+	
 	
 //	import java.util.Scanner;
 //	public class Main {
