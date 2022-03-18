@@ -248,14 +248,22 @@ public class AtCoder {
 			s = s.replace(t[i], "");
 		}
 		
-		System.out.println((s.equals("")?"YES":"NO"));
+		System.out.println((s.equals("")?"YES":"NO");
 
 	}	
 
 
 		
 		
-
+//		for(int j =0; j<t.size(); j++) {
+//			if(s.equals(t.get(j))) {
+//				result = "YES";
+//				break;
+//			}else {
+//				result = "No";
+//			}
+//		}
+	}
 	
 	
 //	import java.util.Scanner;

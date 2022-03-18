@@ -255,7 +255,15 @@ public class AtCoder {
 
 		
 		
-
+//		for(int j =0; j<t.size(); j++) {
+//			if(s.equals(t.get(j))) {
+//				result = "YES";
+//				break;
+//			}else {
+//				result = "No";
+//			}
+//		}
+	}
 	
 	
 //	import java.util.Scanner;

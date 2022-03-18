@@ -251,11 +251,6 @@ public class AtCoder {
 		System.out.println((s.equals("")?"YES":"NO"));
 
 	}	
-
-
-		
-		
-
 	
 	
 //	import java.util.Scanner;

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="edu.kh.poly.ex1.model.vo.RollsRoyce"/>
-    <fullyQualifiedTypeName name="edu.kh.poly.ex1.model.vo.Spark"/>
     <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.vo.Animal"/>
     <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.vo.Dog"/>
     <fullyQualifiedTypeName name="edu.kh.poly.ex2.model.service.ExampleService"/>
@@ -59,5 +57,7 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.sun.tools.sjavac.comp.dependencies.PublicApiCollector"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="sun.java2d.pipe.LoopBasedPipe"/>
 </qualifiedTypeNameHistroy>
