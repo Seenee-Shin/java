@@ -56,28 +56,17 @@ public class Main {
 		
 		int N = sc.nextInt();
 		int K = sc.nextInt();
-		int[] A = new int[N];
-		int[] B = new int[N];
-
 		
-		for(int i=0; i<A.length; i++) {
-			A[i] = sc.nextInt();
-		}
-		for(int i=0; i<B.length; i++) {
-			B[i] = sc.nextInt();
-		}
+		int [][] AB = new int[2][N];
 		
-		int a = A[0];
-		int b = B[0];
-		
-		for(int i =0; i<A.length; i++) {
-			if(A[i]-A[i+1] <= K) {
-			}else if(B[i]-B[i+1] <=K) {
-			}else if(A[i]-B[i+1]<=K) {
-			}else if(B[i]-A[i+1]<=K) {
+		for(int i =0; i < 2; i++) {
+			for(int j =0; j<N; j++) {
+				AB[i][j] = sc.nextInt();
 			}
-			
 		}
+		
+		
+		
 
 	}
 
