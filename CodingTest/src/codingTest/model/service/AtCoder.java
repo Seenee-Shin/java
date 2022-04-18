@@ -251,11 +251,35 @@ public class AtCoder {
 		System.out.println((s.equals("")?"YES":"NO"));
 
 	}	
-
-
+	
+	public void teamLab() {
+		List<Integer> arr = new ArrayList<Integer>();
+		int count = 0;
 		
+		for (int i = 7; i<=7777777; i++) {
+			if(i%7 == 0) {
+				arr.add(i);
+			}
+		}
 		
+		for(int j = 0 ; j<arr.size(); j++ ) {
+			int num = arr.get(j);
+			do {
+				//각 자리수가 7일때 카운트 ++; 
+				if(num%10 == 7) {
+					count++;
+				}
+				
+				num /= 10;
+				
+			}while(num>0);
+		}
+		
+		System.out.println(count);
+	}
+	
 
+	
 	
 	
 //	import java.util.Scanner;
