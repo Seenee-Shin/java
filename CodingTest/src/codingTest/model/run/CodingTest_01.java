@@ -11,7 +11,8 @@ public class CodingTest_01 {
 		BaekJoon b = new BaekJoon();
 		
 		//atCorder.placingMarbles();
-		b.b10952();
+		//b.b10952();
+		b.b3052();
 		
 		
 	
