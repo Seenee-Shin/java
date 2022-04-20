@@ -1,5 +1,10 @@
 package codingTest.model.service;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.*;
 
 public class BaekJoon {
@@ -122,6 +127,7 @@ public class BaekJoon {
 		
 	}
 	
+	
 	public void b1546() {
 		int N = sc.nextInt();
 		int[] max = new int[N]; 
@@ -146,9 +152,9 @@ public class BaekJoon {
 		newAvg = sum/N;
 		
 		System.out.println(newAvg);
-		
-		
 	}
+	
+	
 	
 	public void b3052() {
 		Set<Integer> result = new HashSet<Integer>();
@@ -160,6 +166,84 @@ public class BaekJoon {
 		
 		System.out.println(result.size());
 	}
+	
+	public void b8958() {
+		int T = sc.nextInt();
+		String[] ox = new String[T]; 
+		sc.nextLine();
 		
+		for(int i= 0; i <ox.length; i++) {
+			ox[i]= sc.nextLine();
+			}
+			
+		for(int i =0; i<ox.length; i++) {
+			int score = 0;
+			int count = 0;
+			for(int j=0; j<ox[i].length(); j++) {
+				if(ox[i].charAt(j)=='O') {
+					count++;
+					score += count;
+				}else {
+					count = 0;
+				}
+			}
+			System.out.println("score :"+ score);
+		}
+	}	
+	
+	
+	public void b1152() {
+		String input = sc.nextLine().trim();
+		String[] count = input.split(" ");
+		if(count[0]=="") {
+			System.out.println(0);
+		}else {
+			System.out.println(count.length);
+		}
+	}
+	
+	public void b2839() {
+		int N = sc.nextInt();
+		int count = 0;
+		
+		while(true) {
+			//가장 적게 봉지를 만들어야하기 때문에 먼저 5로 나누어 지는지 확인
+			if(N%5==0) {
+				count += N/5;
+				System.out.println(count);
+				break;
+			}else if (N <0){
+				System.out.println(-1);
+				break;
+			}
+			
+			//처음에는 N%3 ==0으로했지만, 11같은경우 어디에도 속하지 않기 때문에 count를 직접++, 3kg의 설탕봉지는 --해줌 
+			N -= 3;
+			count++;
+		}
+	}
+	
+	public void b2751() throws IOException {
+		//스캐너와 sysout은 시간초과가 생길 가능성이 크므로 buffer를 이용해 입출력하는 연습을 하자
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		String n = br.readLine();
+		int N =Integer.parseInt(n) ;
+		
+		List<Integer> result = new ArrayList<Integer>();
+		
+		for(int i = 0; i<N; i++) {
+			int number = Integer.parseInt(br.readLine());
+			result.add(number);
+		}
+		Collections.sort(result);
+		for(Integer i : result) {
+			bw.write(i+"\n");
+		}
+		
+		bw.flush();
+		
+	}
 
 }
