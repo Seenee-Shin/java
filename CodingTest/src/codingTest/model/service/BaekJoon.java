@@ -245,5 +245,74 @@ public class BaekJoon {
 		bw.flush();
 		
 	}
+	
+	public void b1712(){
+		
+		 //고정비용
+		long A = sc.nextLong();
+		//가변비용
+		long B = sc.nextLong();
+		//노트북 가격
+		long C = sc.nextLong();
+		
+		if(B >= C) {
+			System.out.println(-1);
+		}else {
+			long count = A/(C-B) +1 ;
+			System.out.println(count);
+		}
+		
+		sc.close();
+	}
+	
+	public void b11720() {
+		int N = sc.nextInt();
+		String number = sc.next();
+		
+		int sum = 0;
+		for(int i=0; i < number.length(); i++) {
+			sum+= number.charAt(i)-'0';
+		}
+		System.out.println(sum);
+	}
+	
+	public void b2675() {
+		int N = sc.nextInt();
+		
+		for(int i =0; i <N; i++) {
+			int R = sc.nextInt();
+			String S = sc.next();
+			
+			for(int j=0; j<S.length(); j++) {
+				for(int k= 0; k<R; k++) {
+					System.out.print(S.charAt(j));
+				}
+			}
+			System.out.println();
+		}
+		sc.nextLine();
+		sc.close();
+	}
+	
+	public void b1929() {
+		//시간초과 ... 
+		int M = sc.nextInt();
+		int N = sc.nextInt();
+		sc.nextLine();
+		int count =0;
+		
+		for(int i = 2; i<=N; i++) {
+			for(int j=2; j<=N; j++) {
+				if(i%j ==0) {
+					count++;
+				}
+			}
+			
+			if(count==1) {
+				System.out.println(i);
+			}
+			count = 0;
+		}
+	}
 
 }
