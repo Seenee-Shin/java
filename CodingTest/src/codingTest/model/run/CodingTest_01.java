@@ -14,7 +14,7 @@ public class CodingTest_01 {
 		
 		//atCorder.placingMarbles();
 		//b.b10952();
-		b.b1929();
+		b.teamLab();
 		
 		
 	
