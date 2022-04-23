@@ -490,4 +490,30 @@ public class BaekJoon {
 		}
 		System.out.println(sum);
 	}
+	
+	public void b10828() throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		int N = Integer.parseInt(br.readLine());
+		
+		for(int i =0; i <N; i++) {
+			
+		}
+	}
+	
+	public void push(int[] stack) {
+		
+	}
+	public void pop(int[] stack) {
+		
+	}
+	public void size(int[] stack) {
+		
+	}
+	public void empty(int[] stack) {
+		
+	}
+	public void top(int[] stack) {
+		
+	}
 }
