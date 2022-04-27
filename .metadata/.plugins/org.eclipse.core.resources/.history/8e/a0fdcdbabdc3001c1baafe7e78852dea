@@ -1,0 +1,8 @@
+package codingTest.model.service;
+
+import java.io.*
+;
+public class Beakjoon220424 {
+	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+}

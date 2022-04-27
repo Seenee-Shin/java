@@ -61,19 +61,6 @@ public class BeackJoon220423 {
 		int count =0;
 		int[] alpabet = new int[26];
 		
-		for(int i=0; i<str.length; i++) {
-			for(int j=1; j<str[i].length(); j++) {
-				
-				if(str[i].charAt(j);)
-				for(int k=0; k < alpabet.length; k++) {
-					if(ch == (char)97+k) {
-						alpabet[k]+=1;
-						break;
-					}
-				}
-			}
-		}
-		
 		return result;
 	}
 }
